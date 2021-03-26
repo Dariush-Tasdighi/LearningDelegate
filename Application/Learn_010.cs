@@ -8,7 +8,7 @@
 
 		public static void StaticMethod()
 		{
-			System.Console.WriteLine("I'm static method!");
+			System.Console.WriteLine("I'm a static method!");
 		}
 
 		public SomeClass() : base()
@@ -17,7 +17,7 @@
 
 		public void NonStaticMethod()
 		{
-			System.Console.WriteLine("I'm not static method!");
+			System.Console.WriteLine("I'm not a static method!");
 		}
 	}
 

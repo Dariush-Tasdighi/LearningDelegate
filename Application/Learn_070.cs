@@ -51,13 +51,16 @@
 			myNotifyDelegate += user3.Notify;
 			// **************************************************
 
-			System.Console.Write("Press any key to send message to all users!");
-			System.Console.ReadKey();
-			System.Console.WriteLine();
-
-			if (myNotifyDelegate != null)
+			while(1 == 1)
 			{
-				myNotifyDelegate("Hello, World!");
+				System.Console.Write("Write a message to send to all users: ");
+				string message = System.Console.ReadLine();
+				System.Console.WriteLine();
+
+				if (myNotifyDelegate != null)
+				{
+					myNotifyDelegate(message);
+				}
 			}
 		}
 	}
